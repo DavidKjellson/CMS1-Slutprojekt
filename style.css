@@ -1,0 +1,387 @@
+/* Färger:
+#000
+#1C3738
+#FDFFFC */
+
+
+body{
+	background-color:#bdbbb0;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#main-header {
+  background-color: #000;
+}
+#navbar{
+	background-color:#000;
+	color:#fff;
+}
+
+#navbar ul{
+  padding-top: 15px;
+  padding-bottom: 15px;
+	list-style: none;
+}
+
+#navbar li{
+  display:inline;
+  
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:24px;
+  padding-right:15px;
+
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+
+#navbar .search{
+	float: right;
+	position:relative;
+	top: -25px;
+	
+}
+
+#navbar .search button {
+  float: right;
+  padding: 6px 10px;
+  /* margin-top: 8px;
+  margin-right: 16px; */
+  background: white;
+  font-size: 17px;
+  border: none;
+	cursor: pointer;
+	position:relative;
+	top: 1px;
+}
+
+#navbar .search button:hover {
+  background: #ccc;
+}
+
+#navbar input[type=text] {
+	
+  padding: 6px;
+  border: none;
+  /* margin-top: 8px; */
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+#hero{
+	/* background-image:url('/img/hero.png'); */
+	background-position:center right;
+	min-height:500px;
+	margin-bottom:30px;	
+}
+
+#four0four {
+	display: block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+.logo img {
+	width: 100%;
+	  /* Denna kod fade:ar bilden på första sidan. Hittad på nätet. //David */
+		animation: fadeIn ease 5s;
+		-webkit-animation: fadeIn ease 5s;
+		-moz-animation: fadeIn ease 5s;
+		background-repeat: no-repeat;
+		height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+	margin-top: 50px;
+}
+
+.grid p {
+	width: 500px;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	
+}
+
+.grid3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid2 img {
+	box-shadow: 5px 5px 10px #000;
+}
+
+.grid4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 50px;
+}
+
+.grid5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 50px;
+}
+
+
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.n1 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.news {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+justify-items: center;
+
+}
+
+.news img {
+	box-shadow: 5px 5px 10px #000;
+}
+
+.item {
+	margin-bottom: 100px;
+}
+
+.item-text {
+	line-height: 1.8;
+}
+
+.archives {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+	overflow: hidden;
+}
+
+.archives li {
+	display: inline;
+	margin: 1rem;
+}
+
+.archives a:link {
+	color: #BB342F;
+}
+
+.archives a:visited {
+	color: #BB342F;
+}
+
+/* ABOUT CARDS, Här används även lite FA och jquary// Putte */
+
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+	text-align: center;
+	background-color: #ccc;
+}
+
+#map {
+	margin-top: 100px;
+	width: 100%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.grid4 button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+#main-footer{
+  font-size: 20px;
+	background: #000;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:100px;
+}
+
+/* Fade på popup, Putte */
+#ex1 {
+	animation: fadeIn ease 1.5s;
+	
+}
+
+
+/* Dessa två gör så att faden syns på Chrome, Safari, och Firefox. //David */
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* Här anpassas hela sidan för padda och mobila enheter i olika storlekar, Putte */
+@media(max-width: 1280px) {
+
+
+	.news {
+		display: block;
+	}
+
+	.grid {
+		display: block;
+	}
+
+	.grid p {
+		width: auto;
+	}
+
+	.grid2 {
+		/* grid-template-columns: 1fr 1fr; */
+		justify-items: center;
+	}
+
+	.bandbild {
+		width: 100%;
+	}
+
+	
+}
+
+@media(max-width: 768px) {
+
+
+	.news {
+		display: block;
+	}
+
+	.grid {
+		display: block;
+	}
+
+	.grid p {
+		width: auto;
+	}
+
+	.grid2 {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+
+	.grid3 {
+		display: block;
+	}
+
+	.grid4 {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	.grid5 {
+		display: block;
+	}
+	.bandbild {
+		width: 100%;
+	}
+
+
+  
+}
+
+@media (max-width: 1035px){
+	#navbar .search {
+		display: none;
+  }
+}
+
+@media (max-width:426px){
+	#navbar a {
+		font-size: 14px;	
+	}
+
+	.news img {
+		width: 100%;
+	}
+
+	.grid5 {
+		display: block;
+	}
+
+	.grid4 {
+		display: block;
+	}
+
+
+}
+
